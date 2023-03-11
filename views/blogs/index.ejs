@@ -1,16 +1,16 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://miro.medium.com/v2/1*m-R_BkNf1Qjr1YbyOIJY2w.png">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bithope</title>
- </head>
- <body>
-    <h1><%= data %></h1>
-    <hr>
-    <h2>ข้อมูลบทความทั้งหมด</h2>
+  </head>
+  <body>
+    <header><%- include("../layout") %></header>
+    <div class="py-2"><a href="/blogs/add" class="btn btn-primary">เขียนบทความ</a></div>
+    <hr />
+    <h2><%= data %></h2>
     <p>By Bithope</p>
- </body>
- </html>
+  </body>
+</html>
