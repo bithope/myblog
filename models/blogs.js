@@ -7,9 +7,7 @@ const db = mongoose.connection;
 const Schema = mongoose.Schema;
 
 const blogSchema = new Schema({
-    id: {
-        type: Schema.ObjectId
-    },
+    
     title: {
         type: String,
         required: true
@@ -25,3 +23,6 @@ const blogSchema = new Schema({
 });
  
 const Blogs = module.exports = mongoose.model('blogs', blogSchema);
+module.exports.createBlog = function (newBlogs, callback) {
+    newBlogs.save(callback);
+}
